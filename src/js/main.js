@@ -11,7 +11,16 @@ function scrollTo(elem) {
   }, 400);
 }
 
-$('nav a').click(function () {
-  const view = $(this).attr('data-scroll-to');
+let mobile = false;
+$('nav li').click(function () {
+  const view = $(this).find('a').attr('data-scroll-to');
   scrollTo(view);
+  if (mobile) {
+    $('.navbar-nav').toggleClass('hidden-sm-down');
+  }
+});
+
+$('.hamburger').click(() => {
+  $('.navbar-nav').toggleClass('hidden-sm-down');
+  mobile = true;
 });
