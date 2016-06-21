@@ -6,6 +6,9 @@
 nav{
   background: rgba(14,14,14,0.9);
   font-size: 1rem;
+  .navbar-brand{
+    cursor: pointer;
+  }
   ul{
     margin-bottom: 0;
     padding: 0;

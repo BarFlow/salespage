@@ -24,3 +24,7 @@ $('.hamburger').click(() => {
   $('.navbar-nav').toggleClass('hidden-sm-down');
   mobile = true;
 });
+
+$('.navbar-brand').click(() => {
+  window.scrollTo(0, 0);
+});
