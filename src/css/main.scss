@@ -5,7 +5,7 @@
 
 nav{
   background: rgba(14,14,14,0.9);
-  font-size: 16px;
+  font-size: 1rem;
   ul{
     margin-bottom: 0;
   }
@@ -13,7 +13,7 @@ nav{
 
 main{
   section.landing{
-    padding-top: 60px;
+    padding-top: 4rem;
     background-image: $gradient-opaque, url('../images/landing_bg.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -32,6 +32,7 @@ main{
     }
     @include media-breakpoint-down(sm) {
       text-align: center;
+      padding-top: 5.5rem;
     }
   }
 
@@ -101,8 +102,8 @@ main{
 
   section.getting-started-wrap{
     background-image: url(../images/getting_started_bg.jpg);
-    background-size: cover;
     background-attachment: fixed;
+    background-size: cover;
     // Disabling background-attachment: fixed; in iOS Safari
     @supports (-webkit-text-size-adjust:none) and (not (-ms-accelerator:true)) and (not (-moz-appearance:none)) {   background-attachment: scroll;  }
     text-align: center;
@@ -133,12 +134,13 @@ main{
           margin-bottom: 0;
         }
         span{
-          font-weight: bold;
+          text-shadow: none;
+          font-family: 'FrutigerNext LT Bold';
         }
       }
     }
     .bold{
-      font-weight: bold;
+      font-family: 'FrutigerNext LT Bold';
       margin-bottom: 2rem;
     }
     .urock{
@@ -150,7 +152,7 @@ main{
 
 footer{
   background: rgba(32,32,32,1);
-  font-size: 12px;
+  font-size: 14px;
   padding: 1rem;
   @include media-breakpoint-down(sm) {
     text-align: center;

@@ -1,23 +1,52 @@
 html {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 @include media-breakpoint-up(md) {
   html {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
 @include media-breakpoint-up(lg) {
   html {
-    font-size: 18px;
+    font-size: 20px;
   }
+}
+
+@font-face {
+  font-family: 'FrutigerNext LT Regular';
+  src: url('../fonts/LT_54361.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/LT_54361.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/LT_54361.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/LT_54361.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/LT_54361.svg#a1c1d8086204becf8ac3194da08a1064') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'FrutigerNext LT Bold';
+  src: url('../fonts/LT_54363.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/LT_54363.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/LT_54363.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/LT_54363.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/LT_54363.svg#949490a8bcbb53aeec0c9e1e4b8b8e60') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  700;
 }
 
 body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color:#2B2B2B;
+  font-family: 'FrutigerNext LT Regular';
+}
+
+h1,h2,.bold{
+  font-family: 'FrutigerNext LT Bold';
 }
 
 .btn{
