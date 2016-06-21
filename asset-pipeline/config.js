@@ -38,7 +38,7 @@ export const js = {
   noParse: [
     require.resolve('jquery'),
     require.resolve('lodash'),
-    require.resolve('bootstrap'),
+    // require.resolve('bootstrap'),
     require.resolve('tether')
   ],
   // extensions is an array of optional extra extensions for the module lookup machinery to use when the extension

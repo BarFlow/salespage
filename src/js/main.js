@@ -1,5 +1,9 @@
 import $ from 'jquery';
+import Tether from 'tether';
 window.$ = window.jQuery = $;
+window.Tether = Tether;
+require('bootstrap');
+
 
 // Helpers
 // function scrollTo(elem) {

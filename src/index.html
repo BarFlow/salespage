@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StockMate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="css/main.css">
   <link rel="icon" type="image/png" href="/images/favicon.png">
 
@@ -23,16 +23,41 @@
 
 </head>
 <body>
+<nav class="navbar navbar-full navbar-fixed-top dark">
+  <img src="images/logo.svg" alt="logo" class="navbar-brand" />
+  <button class="navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#menuitems">&#9776;</button>
+  <div class="collapse navbar-toggleable-xs" id="menuitems">
+    <ul class="navbar-nav nav-inline pull-sm-right">
+      <li class="nav-item"><a href="#">Features</a></li>
+      <li class="nav-item"><a href="#">Pre-Order</a></li>
+      <li class="nav-item"><a href="#">Getting Started</a></li>
+    </ul>
+  </div>
+</nav>
 <main>
-  Yo!
-</main>
-<footer class="container-fluid">
-  <div class="row">
-    <div class="col-xs-12 col-lg-8 left">
-     Copyright (c) 2016
+  <section class="container-fluid landing dark">
+    <div class="row">
+      <div class="col-xs-12 col-sm-7 lead">
+        <div>
+          <h1>Stock Control Made Easy</h1>
+          <p class="lead">Simple yet powerful way to manage your beverage inventory</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-5">
+        <img src="images/iphone.png" alt="app" class="iphone" />
+      </div>
     </div>
-    <div class="col-xs-12 col-lg-4 right">
-      <a href="mailto:info@example.com">Contact</a> | <a href="terms_privacy.html" target="_blank">Terms of service</a> | <a href="terms_privacy.html" target="_blank">Privacy Policy</a>
+  </section>
+</main>
+<footer class="container-fluid dark">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+     Copyright (c) 2016 StockMate Ltd.
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <span class="pull-sm-right">
+        <a href="mailto:info@example.com">Contact</a> | <a href="terms_privacy.html" target="_blank">Terms of service</a> | <a href="terms_privacy.html" target="_blank">Privacy Policy</a>
+      </span>
     </div>
   </div>
 </footer>

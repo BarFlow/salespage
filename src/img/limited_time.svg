@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="203px" height="198px" viewBox="0 0 203 198" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 15 + Limited time only</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="203" height="198"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD" sketch:type="MSArtboardGroup" transform="translate(-1237.000000, -3250.000000)">
+            <g id="preorder" sketch:type="MSLayerGroup" transform="translate(0.000000, 3250.000000)">
+                <g id="Rectangle-15">
+                    <g id="Rectangle-15-+-Limited-time-only">
+                        <g transform="translate(1237.000000, 0.000000)">
+                            <mask id="mask-2" sketch:name="Mask" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Mask" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                            <g mask="url(#mask-2)">
+                                <g transform="translate(129.353553, 79.646447) rotate(45.000000) translate(-129.353553, -79.646447) translate(-54.646447, 56.146447)">
+                                    <rect id="Rectangle-15" fill="#2F2F2F" fill-rule="evenodd" filter="url(#filter-3)" sketch:type="MSShapeGroup" x="-2.27373675e-13" y="1" width="368" height="46"></rect>
+                                    <text id="Limited-time-only" fill="none" sketch:type="MSTextLayer" font-family="Arial" font-size="18" font-weight="normal" sketch:alignment="middle">
+                                        <tspan x="116.473633" y="28.2558594" fill="#FFFFFF">Limited time only</tspan>
+                                    </text>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
