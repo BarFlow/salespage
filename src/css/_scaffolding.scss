@@ -14,15 +14,18 @@ html {
   }
 }
 
+body{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color:#2B2B2B;
+}
+
 .btn{
   background-color: transparent;
   border: 2px solid white;
   border-radius: 0.4rem;
-  padding: 0.7rem 2.5rem;
+  padding: 0.7rem 3rem;
   font-size: 1.2rem;
-}
-.btn:focus,.btn:active{
-  outline: none;
 }
 
 .div-line{

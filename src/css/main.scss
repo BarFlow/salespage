@@ -6,6 +6,9 @@
 nav{
   background: rgba(14,14,14,0.9);
   font-size: 16px;
+  ul{
+    margin-bottom: 0;
+  }
 }
 
 main{
@@ -26,6 +29,9 @@ main{
       @include media-breakpoint-up(sm) {
         margin-top: 4rem;
       }
+    }
+    @include media-breakpoint-down(sm) {
+      text-align: center;
     }
   }
 
@@ -93,12 +99,59 @@ main{
     }
   }
 
+  section.getting-started-wrap{
+    background-image: url(../images/getting_started_bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    // Disabling background-attachment: fixed; in iOS Safari
+    @supports (-webkit-text-size-adjust:none) and (not (-ms-accelerator:true)) and (not (-moz-appearance:none)) {   background-attachment: scroll;  }
+    text-align: center;
+    padding: 4rem 0;
+    ul{
+      margin: 0 ;
+      padding: 0;
+      li{
+        background: white;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 0.4rem;
+        margin-bottom: 1rem;
+        .stepcount{
+          font-size: 1.2rem;
+          background: #4b4b4b;
+          border-radius: 10rem;
+          flex: 0 0 4rem;
+          line-height: 4rem;
+          margin-right: 0.8rem;
+        }
+        p{
+          text-align: left;
+          color:#2B2B2B;
+          text-shadow: none;
+          margin-bottom: 0;
+        }
+        span{
+          font-weight: bold;
+        }
+      }
+    }
+    .bold{
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+    .urock{
+      margin-bottom: 0;
+    }
+  }
+
 }
 
 footer{
   background: rgba(32,32,32,1);
   font-size: 12px;
-  line-height: 30px;
+  padding: 1rem;
   @include media-breakpoint-down(sm) {
     text-align: center;
   }
