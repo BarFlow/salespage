@@ -4,16 +4,18 @@
 @import "scaffolding";
 
 nav{
-  background: rgba(14,14,14,0.80);
+  background: rgba(14,14,14,0.9);
   font-size: 16px;
 }
 
 main{
-  .landing{
+  section.landing{
     padding-top: 60px;
     background-image: $gradient-opaque, url('../images/landing_bg.jpg');
     background-size: cover;
     background-attachment: fixed;
+    // Disabling background-attachment: fixed; in iOS Safari
+    @supports (-webkit-text-size-adjust:none) and (not (-ms-accelerator:true)) and (not (-moz-appearance:none)) {   background-attachment: scroll;  }
     .lead{
       display: flex;
       align-items: center;
@@ -21,6 +23,73 @@ main{
     }
     img.iphone{
       max-width: 100%;
+      @include media-breakpoint-up(sm) {
+        margin-top: 4rem;
+      }
+    }
+  }
+
+  section.feature-wrap{
+    padding: 4rem 0;
+    .feature{
+      .benefit{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      img{
+        max-width: 90%;
+      }
+
+      @include media-breakpoint-down(sm) {
+        .row{
+          display: flex;
+          text-align: center;
+          .benefit{
+            order:0;
+          }
+          .thumbnail{
+            order: 1;
+            img{
+              max-width: 60%;
+            }
+          }
+        }
+      }
+
+    }
+
+
+    .save_time div.div-line, .supplier_tracking div.div-line{
+      background-color: $blue;
+    }
+    .minimaze_errors div.div-line{
+      background-color: $orange;
+    }
+    .centralized_ordering div.div-line{
+      background-color: $green;
+    }
+    .birds_eye_view div.div-line{
+      background-color: $yellow;
+    }
+
+  }
+  section.feature-wrap.odd{
+    background-color: $gray-blue;
+  }
+
+  section.preorder-wrap{
+    background-image: $gradient;
+    text-align: center;
+    position: relative;
+    padding: 4rem 0;
+    img.ribbon{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    a{
+      margin: 1rem 0 0;
     }
   }
 
@@ -30,4 +99,7 @@ footer{
   background: rgba(32,32,32,1);
   font-size: 12px;
   line-height: 30px;
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
 }
