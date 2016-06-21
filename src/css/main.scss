@@ -78,7 +78,6 @@ main{
           }
         }
       }
-
     }
 
 
@@ -98,6 +97,9 @@ main{
   }
   section.feature-wrap.odd{
     background-color: $gray-blue;
+    .thumbnail{
+      text-align: right;
+    }
   }
 
   section.preorder-wrap{
@@ -137,9 +139,10 @@ main{
         .stepcount{
           font-size: 1.2rem;
           background: #4b4b4b;
+          background: $blue;
           border-radius: 10rem;
-          flex: 0 0 4rem;
-          line-height: 4rem;
+          flex: 0 0 3rem;
+          line-height: 3rem;
           margin-right: 0.8rem;
         }
         p{
