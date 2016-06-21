@@ -99,6 +99,9 @@ main{
     background-color: $gray-blue;
     .thumbnail{
       text-align: right;
+      @include media-breakpoint-down(sm) {
+        text-align: center;
+      }
     }
   }
 
