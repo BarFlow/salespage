@@ -92,13 +92,10 @@ main{
     .save_time div.div-line, .supplier_tracking div.div-line{
       background-color: $blue;
     }
-    .minimaze_errors div.div-line{
-      background-color: $orange;
-    }
     .centralized_ordering div.div-line{
       background-color: $green;
     }
-    .birds_eye_view div.div-line{
+    .birds_eye_view div.div-line, .minimaze_errors div.div-line{
       background-color: $yellow;
     }
 
