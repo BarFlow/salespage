@@ -14,6 +14,16 @@ nav{
     padding: 0;
   }
   @include media-breakpoint-down(xs) {
+    .navbar-brand{
+      padding: 0.4rem 0;
+    }
+
+    button{
+      color: white;
+      padding: .2rem .75rem;
+      font-size: $font-size-lg;
+    }
+
     ul{
       background-color: black;
       li{

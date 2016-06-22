@@ -16,12 +16,12 @@ $('nav li').click(function () {
   const view = $(this).find('a').attr('data-scroll-to');
   scrollTo(view);
   if (mobile) {
-    $('.navbar-nav').toggleClass('hidden-sm-down');
+    $('.navbar-nav').toggleClass('hidden-xs-down');
   }
 });
 
 $('.hamburger').click(() => {
-  $('.navbar-nav').toggleClass('hidden-sm-down');
+  $('.navbar-nav').toggleClass('hidden-xs-down');
   mobile = true;
 });
 
