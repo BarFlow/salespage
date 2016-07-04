@@ -2,7 +2,6 @@ import $ from 'jquery';
 import Tether from 'tether';
 window.$ = window.jQuery = $;
 window.Tether = Tether;
-const fbq = window.fbq;
 
 require('bootstrap');
 
@@ -32,5 +31,5 @@ $('.navbar-brand').click(() => {
 });
 
 $('.preorder-btn').click(() => {
-  fbq('track', 'Pre-Order');
+  window.fbq('track', 'Lead');
 });
