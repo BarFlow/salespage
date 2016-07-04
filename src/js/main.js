@@ -2,6 +2,8 @@ import $ from 'jquery';
 import Tether from 'tether';
 window.$ = window.jQuery = $;
 window.Tether = Tether;
+const fbq = window.fbq;
+
 require('bootstrap');
 
 // Helpers
@@ -27,4 +29,8 @@ $('.hamburger').click(() => {
 
 $('.navbar-brand').click(() => {
   window.scrollTo(0, 0);
+});
+
+$('.preorder-btn').click(() => {
+  fbq('track', 'Pre-Order');
 });
