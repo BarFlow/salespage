@@ -120,7 +120,7 @@ main{
     }
   }
 
-  section.preorder-wrap{
+  section.preorder-wrap, section.learn-more-wrap{
     background-image: $gradient;
     text-align: center;
     position: relative;
@@ -132,6 +132,12 @@ main{
     }
     a{
       margin: 1rem 0 0;
+    }
+  }
+
+  section.learn-more-wrap{
+    a{
+      font-size: 1.6rem;
     }
   }
 
