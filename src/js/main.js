@@ -12,6 +12,7 @@ function scrollTo(elem) {
   }, 400);
 }
 
+// Navbar
 let mobile = false;
 $('nav li').click(function () {
   const view = $(this).find('a').attr('data-scroll-to');
@@ -30,6 +31,32 @@ $('.navbar-brand').click(() => {
   window.scrollTo(0, 0);
 });
 
+// LeadTracking
 $('.preorder-btn').click(() => {
   window.fbq('track', 'Lead');
 });
+
+// Exit dialog
+const exitOverlay = function () {
+  if (localStorage.getItem('exitOverlay')) {
+    return;
+  }
+  $('body').one('mouseleave', (e) => {
+    $('.dialog').css('display', 'flex');
+    localStorage.setItem('exitOverlay', true);
+  });
+  $('.cover, .close').click(() => {
+    $('.dialog').css('display', 'none');
+  });
+};
+if (document.hasFocus()) {
+  exitOverlay();
+}
+let hadFocus = false;
+	window.onfocus = function () {
+  if (hadFocus) {
+    return;
+  }
+  exitOverlay();
+  hadFocus = true;
+};
