@@ -53,7 +53,7 @@ if (document.hasFocus()) {
   exitOverlay();
 }
 let hadFocus = false;
-	window.onfocus = function () {
+window.onfocus = function () {
   if (hadFocus) {
     return;
   }
