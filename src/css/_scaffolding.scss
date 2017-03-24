@@ -49,6 +49,13 @@ h1,h2,.bold{
   font-family: 'FrutigerNext LT Bold';
 }
 
+h1{
+  font-size: 2rem;
+}
+h2{
+  font-size: 1.8rem;
+}
+
 button{
   background-color: transparent;
   padding: 0;
@@ -68,7 +75,7 @@ button{
   width: 7rem;
   height: 3px;
   margin: 1rem 0 1.2rem;
-  background-color: white;
+  background-color: #2B2B2B;
   display: inline-block;
 }
 
@@ -81,6 +88,18 @@ button{
   a{
     color: white;
   }
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.text-right{
+  text-align: right;
 }
 
 a,a:focus,button,button:focus{

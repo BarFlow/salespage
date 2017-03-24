@@ -13,6 +13,9 @@ nav{
   ul{
     margin-bottom: 0;
     padding: 0;
+    li{
+      font-size: 0.9rem;
+    }
   }
   @include media-breakpoint-down(xs) {
     .navbar-brand{
@@ -47,14 +50,15 @@ main{
     background-size: cover;
     background-attachment: fixed;
     // Disabling background-attachment: fixed; in iOS Safari
-    @supports (-webkit-text-size-adjust:none) and (not (-ms-accelerator:true)) and (not (-moz-appearance:none)) {   background-attachment: scroll;  }
+    // @supports (-webkit-text-size-adjust:none) and (not (-ms-accelerator:true)) and (not (-moz-appearance:none)) {   background-attachment: scroll;  }
     .lead{
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      text-align: center;
     }
-    img.iphone{
-      max-width: 100%;
+    .products{
+      text-align: center;
+      img{
+        max-width: 100%;
+      }
       @include media-breakpoint-up(md) {
         margin-top: 3rem;
       }
@@ -72,14 +76,31 @@ main{
 
   section.feature-wrap{
     padding: 4rem 0;
+    overflow-x: hidden;
     .feature{
       .benefit{
         display: flex;
         align-items: center;
         justify-content: center;
       }
-      img{
-        max-width: 90%;
+      .thumbnail{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 35%;
+        margin: -1rem 15px -4rem 0;
+        position: relative;
+        @include media-breakpoint-down(sm) {
+          img{
+            max-height: 100%;
+            position: absolute;
+            bottom: 0;
+          }
+        }
+      }
+      .thumbnail.right{
+        justify-content: flex-start;
+        margin: -1rem 0 -4rem 15px;
       }
 
       @include media-breakpoint-down(xs) {
@@ -91,37 +112,109 @@ main{
           }
           .thumbnail{
             order: 1;
+            width: 100%;
+            display: block;
+            margin: auto auto -64px auto;
             img{
-              max-width: 60%;
+              position: relative;
+              max-height: none;
+              max-width: 70%;
             }
           }
         }
       }
     }
-
-
-    .save_time div.div-line, .supplier_tracking div.div-line{
-      background-color: $blue;
-    }
-    .centralized_ordering div.div-line{
-      background-color: $green;
-    }
-    .birds_eye_view div.div-line, .minimaze_errors div.div-line{
-      background-color: $yellow;
-    }
-
   }
-  section.feature-wrap.odd{
+  section.feature-wrap.grey{
     background-color: $gray-blue;
-    .thumbnail{
-      text-align: right;
-      @include media-breakpoint-down(sm) {
+  }
+
+  section.testimonial{
+    background-image: $gradient-opaque-dark, url('../images/home_testimonial_bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    // Disabling background-attachment: fixed; in iOS Safari
+    // @supports (-webkit-text-size-adjust:none) and (not (-ms-accelerator:true)) and (not (-moz-appearance:none)) {   background-attachment: scroll;  }
+    padding: 3rem 0;
+    color: $white;
+    text-shadow: 0px 1px 1px rgba(0,0,0,0.50);
+
+    @media(max-width:767px){
+      br{
+        display: block;
+      }
+    }
+    div.profile{
+      border-right: 1px solid white;
+      margin-right: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      @media(max-width:767px){
+        border-right: none;
+        padding-top: 20px;
+      }
+      img{
+        width: 140px;
+        height: 140px;
+        margin-bottom: 10px;
+      }
+      p{
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 18px;
+        margin-bottom: 0;
+        width: 140px;
         text-align: center;
+        margin: auto auto 10px;
+        span{
+          font-weight: normal;
+          font-size: 14px;
+        }
+      }
+    }
+    div.text{
+      display: flex;
+      align-items: center;
+      h3{
+        font-size: 1.6rem;
+        font-style: italic;
+        @media(max-width:767px){
+          text-align: center;
+        }
       }
     }
   }
 
-  section.preorder-wrap, section.learn-more-wrap{
+  section.awesome-features{
+    div.div-line{
+      margin-bottom: 3rem;
+    }
+    .media-left{
+      width: 65px;
+      text-align: center;
+      img{
+        max-width:55px;
+      }
+    }
+    h5{
+      font-family: 'FrutigerNext LT Bold';
+      font-size: 1.1rem;
+      @include media-breakpoint-down(xs) {
+        text-align: left;
+      }
+    }
+    p{
+      font-size: 0.9rem;
+      @include media-breakpoint-down(xs) {
+        text-align: left;
+      }
+    }
+  }
+
+  section.beta-wrap{
+    color: white;
     background-image: $gradient;
     text-align: center;
     position: relative;
@@ -134,60 +227,47 @@ main{
     a{
       margin: 1rem 0 0;
     }
-  }
-
-  section.learn-more-wrap{
-    a{
-      font-size: 1.6rem;
+    div.div-line{
+      background-color: white;
     }
-  }
-
-  section.getting-started-wrap{
-    background-image: url(../images/getting_started_bg.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    // Disabling background-attachment: fixed; in iOS Safari
-    @supports (-webkit-text-size-adjust:none) and (not (-ms-accelerator:true)) and (not (-moz-appearance:none)) {   background-attachment: scroll;  }
-    text-align: center;
-    padding: 4rem 0;
-    ul{
-      margin: 0 ;
-      padding: 0;
-      li{
-        background: white;
-        display: flex;
-        align-content: center;
-        align-items: center;
-        padding: 1rem;
-        border-radius: 0.4rem;
-        margin-bottom: 1rem;
-        .stepcount{
-          font-size: 1.2rem;
-          background: #4b4b4b;
-          background: $blue;
-          border-radius: 10rem;
-          flex: 0 0 3rem;
-          line-height: 3rem;
-          margin-right: 0.8rem;
-        }
-        p{
-          text-align: left;
-          color:#2B2B2B;
-          text-shadow: none;
-          margin-bottom: 0;
-        }
-        span{
-          text-shadow: none;
-          font-family: 'FrutigerNext LT Bold';
-        }
+    form{
+      text-align: center;
+      font-size: 20px;
+      margin-top: 30px;
+      .row{
+        margin-bottom: 25px;
+      }
+      @media(max-width:767px){
+        font-size: 16px;
       }
     }
-    .bold{
-      font-family: 'FrutigerNext LT Bold';
-      margin-bottom: 2rem;
+    button{
+      width: 30%;
+      height: 55px;
+      border: 1px solid white;
+      border-radius: 6px;
+      margin: auto;
     }
-    .urock{
-      margin-bottom: 0;
+    input[type="text"],input[type="email"]{
+      height: 55px;
+      width: 100%;
+      background: none;
+      border: 1px solid white;
+      border-radius: 6px;
+      outline: none;
+      padding: 10px 20px;
+      @media(max-width:767px){
+        padding: 10px;
+      }
+      @include media-breakpoint-down(xs) {
+        margin: 0 15px;
+      }
+    }
+    .row.action{
+      margin-bottom: 20px;
+      @media(max-width:767px){
+        margin-bottom: 0;
+      }
     }
   }
 

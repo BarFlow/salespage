@@ -27,34 +27,49 @@
   <img src="images/logo.svg" alt="logo" class="navbar-brand" />
   <button class="hidden-sm-up pull-xs-right hamburger">&#9776;</button>
   <ul class="navbar-nav nav-inline pull-sm-right hidden-xs-down">
-    <li class="nav-item"><a href="#" data-scroll-to=".feature-wrap">Features</a></li>
-    <li class="nav-item"><a href="#" data-scroll-to=".preorder-wrap">Pre-Order</a></li>
-    <li class="nav-item"><a href="#" data-scroll-to=".getting-started-wrap">Getting Started</a></li>
-    <li class="nav-item"><a href="#" data-scroll-to=".learn-more-wrap">Learn More</a></li>
+    <li class="nav-item"><a href="/stocktake">Stocktaking</a></li>
+    <li class="nav-item"><a href="/stocktake">Ordering</a></li>
+    <li class="nav-item"><a href="#" data-scroll-to=".beta-wrap">Sign Up</a></li>
   </ul>
 </nav>
 <main>
   <!-- Landing -->
   <section class="container-fluid landing dark">
     <div class="row">
-      <div class="col-xs-12 col-sm-7 col-lg-6 col-lg-offset-1  lead">
+      <div class="col-xs-12 lead">
         <div>
           <h1>Stock Control Made Easy</h1>
           <p class="lead">Simple yet powerful way to manage your beverage inventory</p>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-5">
-        <img src="images/iphone.png" alt="app" class="iphone" />
+      <div class="col-xs-12 products">
+        <img src="images/home_landing_screen_phone.png" alt="app" />
       </div>
     </div>
   </section>
 
-  <!-- Featue: Save time -->
+  <!-- Featue: Save time and money -->
   <section class="feature-wrap">
     <div class="container feature save_time">
       <div class="row">
-        <div class="col-xs-12 col-sm-5 thumbnail">
-          <img src="images/save_time.png" alt="" />
+        <div class="col-xs-12 col-lg-8 col-lg-offset-2 benefit text-center">
+          <div>
+            <h2>Save Time and Money</h2>
+            <div class="div-line"></div>
+            <p>We’ve created Barflow to help Managers and Owners with their time consuming inventory management duties, including <strong>Stocktaking</strong> and <strong>Ordering</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Featue: Stocktake -->
+  <section class="feature-wrap grey">
+    <div class="container feature stocktake">
+      <div class="row">
+        <div class="thumbnail">
+          <img src="images/home_stocktake_products.png" alt="" />
         </div>
         <div class="col-xs-12 col-sm-7 benefit">
           <div>
@@ -67,171 +82,199 @@
     </div>
   </section>
 
-  <!-- Featue: Minimaze Human Errors -->
-  <section class="feature-wrap odd">
-    <div class="container feature minimaze_errors">
-      <div class="row">
-        <div class="col-xs-12 col-sm-7 benefit">
-          <div>
-            <h2>Minimaze Human Errors</h2>
-            <div class="div-line"></div>
-            <p>During stocktake, levels are automatically synced to the cloud, no more adding up stock counts manually or inputting data one by one &ndash; painless and mistake free workflow.</p>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-5 thumbnail">
-          <img src="images/minimaze_errors.svg" alt="" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Featue: Centralized Ordering -->
+  <!-- Featue: Order -->
   <section class="feature-wrap">
-    <div class="container feature centralized_ordering">
+    <div class="container feature order">
       <div class="row">
-        <div class="col-xs-12 col-sm-5 thumbnail">
-          <img src="images/centralized_ordering.svg" alt="" />
-        </div>
         <div class="col-xs-12 col-sm-7 benefit">
           <div>
-            <h2>Centralized Ordering</h2>
+            <h2>Painless Centralized Orders</h2>
             <div class="div-line"></div>
-            <p>With live inventory data, and easy par level adjustments, purchase orders are created with a single click to multiple suppliers at once using the cloud based web dashboard.</p>
+            <p>Easily create and send purchase orders, based on real-time inventory data, to all of your suppliers at once, with a single click, using our cloud based web dashboard.</p>
+          </div>
+        </div>
+        <div class="thumbnail right">
+          <img src="images/home_ordering_product.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial -->
+  <section class="testimonial container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-lg-3 col-md-4">
+            <div class="profile">
+              <img src="images/redin.png" alt="testimonial" />
+              <p>Redin Dokaj<br/><span>‎Operations Director at House Bars Ltd.</span></p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-lg-9 col-md-8 text">
+            <h3>“Barflow helps us to save more than 50% of the time spent on stocktaking and orderings”</h3>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Featue: Features -->
+  <section class="feature-wrap awesome-features">
+    <div class="container feature">
+      <div class="row">
+        <div class="col-xs-12 col-lg-8 col-lg-offset-2 benefit text-center">
+          <div>
+            <h2>Awesome Features</h2>
+            <div class="div-line"></div>
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <div class="row">
+
+            <!-- cloud -->
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+              <div class="media">
+                <div class="media-left">
+                  <img src="images/home_cloud.png" alt="cloud">
+                </div>
+                <div class="media-body">
+                  <h5>Cloud Based</h5>
+                  <p>No need to buy expensive hardvers. Works from your smartphone and computer.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- roles -->
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+              <div class="media">
+                <div class="media-left">
+                  <img src="images/home_roles.png" alt="roles">
+                </div>
+                <div class="media-body">
+                  <h5>User Roles</h5>
+                  <p>Fine grained access control, Staff, Manager and Admin level accounts are supported.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- live -->
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+              <div class="media">
+                <div class="media-left">
+                  <img src="images/home_live_data.png" alt="live">
+                </div>
+                <div class="media-body">
+                  <h5>Live Data</h5>
+                  <p>All of your data is automatically synced to the cloud keeping you always up-to-date.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Data export -->
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+              <div class="media">
+                <div class="media-left">
+                  <img src="images/home_export.png" alt="Export">
+                </div>
+                <div class="media-body">
+                  <h5>Data Export</h5>
+                  <p>Your data can be exported enytime to Excel, so you can use it the way you want.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- catalog -->
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+              <div class="media">
+                <div class="media-left">
+                  <img src="images/home_catalog.png" alt="catalog">
+                </div>
+                <div class="media-body">
+                  <h5>Product Catalog</h5>
+                  <p>We have 10,000+ of products to choose from, but you can add your own ones too.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Archives -->
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+              <div class="media">
+                <div class="media-left">
+                  <img src="images/home_archives.png" alt="live">
+                </div>
+                <div class="media-body">
+                  <h5>Safe Archives</h5>
+                  <p>Stock reports and purchase orders are saved, so you can access them anytime from anywhere.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Import -->
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+              <div class="media">
+                <div class="media-left">
+                  <img src="images/home_import.png" alt="import">
+                </div>
+                <div class="media-body">
+                  <h5>Import Wizzard</h5>
+                  <p>Setting up your venue can be done easily with our easy-to-use  import module.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- venues -->
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+              <div class="media">
+                <div class="media-left">
+                  <img src="images/home_venues.png" alt="venues">
+                </div>
+                <div class="media-body">
+                  <h5>Multiple Venues</h5>
+                  <p>Access and manage unlimited venues from a single user account.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Offile -->
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+              <div class="media">
+                <div class="media-left">
+                  <img src="images/home_offline.png" alt="offline">
+                </div>
+                <div class="media-body">
+                  <h5>Works Offline</h5>
+                  <p>Our iOS app works in basements and cellars too with no internet access.</p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
   </section>
 
-
-  <!-- Featue: Supplier Tracking -->
-  <section class="feature-wrap odd">
-    <div class="container feature supplier_tracking">
-      <div class="row">
-        <div class="col-xs-12 col-sm-7 benefit">
-          <div>
-            <h2>Invoice Tracking</h2>
-            <div class="div-line"></div>
-            <p>Stay organized by tracking your expenses in a central location. Manage both invoices and receivables so you never overpay or miss a payment.</p>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-5 thumbnail">
-          <img src="images/supplier_tracking.svg" alt="" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Featue: Bird's-Eye View -->
-  <section class="feature-wrap">
-    <div class="container feature birds_eye_view">
-      <div class="row">
-        <div class="col-xs-12 col-sm-5 thumbnail">
-          <img src="images/birds_eye_view.svg" alt="" />
-        </div>
-        <div class="col-xs-12 col-sm-7 benefit">
-          <div>
-            <h2>Bird's-Eye View</h2>
-            <div class="div-line"></div>
-            <p>Having up-to-date analytics always at your fingertip, you can easily spot top moving products and dead stock. Use this data to negotiate better prices with your suppliers & distributors.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Preorder -->
-  <section class="preorder-wrap">
+  <!-- Beta -->
+  <section class="beta-wrap">
     <img src="images/limited_time.svg" alt="limited time only" class="hidden-sm-down ribbon" />
-    <div class="container preorder dark">
+    <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-          <h2>Crazy 50% Pre-Order Discount</h2>
+          <h2>Sign Up for Beta Access</h2>
           <div class="div-line"></div>
-          <p>BarFlow is currently in development but we are working very hard to get it out there as soon as possible. We are looking for early adopters who will get their hands on the product before the official launch. When you pre-order you’ll get a 50% discount for life plus one month free trial. Not bad, right?</p>
-          <p><a href="https://gum.co/barflow" target="_blank" class="btn preorder-btn">Pre-Order <br> £25 / <span class="small">Month</span></a></p>
-          <p class="small">You will not be charged until the end of your trial period.</p>
+          <p>We are currently runnign a beta program, where we are looking for users to join our platrofm, before the official launch. For businesses participating in the beta program we offer a three months free trial and 50% discount for life. Not bad, right?</p>
+        <div class="row">
+          <form class="signup col-xs-12 col-lg-10 col-lg-offset-1">
+            <div class="row">
+              <input type="text" name="company" placeholder="Company">
+            </div>
+            <div class="row">
+              <input name="email" placeholder="E-mail" data-type="email" type="email">
+            </div>
+            <div class="row action">
+              <button type="submit">Register</button>
+            </div>
+          </form>
         </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Getting Started -->
-  <section class="getting-started-wrap">
-    <div class="container getting-started dark">
-
-      <div class="row">
-        <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-          <h2>Getting Started is Nice 'n Easy</h2>
-          <div class="div-line"></div>
-          <p>BarFlow is 100% cloud based, so you don’t have to worry about buying expensive hardware or licenses. You neither have to install any software on your machines or get in touch with your IT people. Once your account is created you can log-in to our dashboard using your internet browser or our iOS app.</p>
-          <p class="bold">All it takes is five simple step to set up your fist venue:</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-          <ul>
-            <li>
-              <div class="stepcount"><span>1</span></div>
-              <div class="info">
-                <p><span>Define areas in your venue such as:</span><br>
-                Main Bar, Patio Bar, Cold Room, Storage Room, Wine Cellar</p>
-              </div>
-            </li>
-            <li>
-              <div class="stepcount"><span>2</span></div>
-              <div class="info">
-                <p><span>Break down your areas into sections such as:</span><br>
-                Left Speed Rail, Center Top Shelf, Right Speed Rail</p>
-              </div>
-            </li>
-            <li>
-              <div class="stepcount"><span>3</span></div>
-              <div class="info">
-                <p><span>List your products for each section such as:</span><br>
-                Grey Goose, Abosulte, Belvedere, Stolichnaya</p>
-              </div>
-            </li>
-            <li>
-              <div class="stepcount"><span>4</span></div>
-              <div class="info">
-                <p><span>Link your products to suppliers:</span><br>
-                MatthewClark - Auchentoshan 12, DrinkWarehouse - Becks 275ml</p>
-              </div>
-            </li>
-            <li>
-              <div class="stepcount"><span>5</span></div>
-              <div class="info">
-                <p><span>Set your your default par leveles:</span><br>
-                This can always be easily adjusted before generating purchase orders</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-          <p class="bold urock">That's it, you rock, now you can do your initial stock take!</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Learn More -->
-  <section class="learn-more-wrap">
-    <div class="container learn-more dark">
-      <div class="row">
-        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-          <h2>Would You Like to Learn More?</h2>
-          <div class="div-line"></div>
-          <p>If you have any questions or just want to get more info, please don't hesitate to contact us, we'll be thrilled by your interest!</p>
-          <p><div id="widget" style="display: inline-block; overflow: hidden; text-align: left; white-space: nowrap;"><a target="_blank" href="http://m.me/BarFlowUK" style="min-width: 90px;border-radius: 6px;-webkit-border-radius: 6px;-moz-border-radius: 6px;border: 1px solid #d5d5d5;padding: 6px 10px 6px 0;text-decoration: none; text-shadow: none;margin: 0;display: block;color: #575757;line-height: 24px;font-size: 14px;font-weight: normal;padding-left: 36px; background: url('images/facebook-message-button-icon2x.png') no-repeat 5px 6px;background-color: #fff !important; background-size: 23px 23px;">Message Us</a></div></p>
         </div>
       </div>
     </div>
@@ -243,7 +286,7 @@
 <footer class="container-fluid dark">
   <div class="row">
     <div class="col-xs-12 col-sm-6">
-     Copyright (c) 2016 BarFlow Ltd.
+     Copyright (c) 2017 BarFlow Ltd.
     </div>
     <div class="col-xs-12 col-sm-6">
       <span class="pull-sm-right">
@@ -252,14 +295,14 @@
     </div>
   </div>
 </footer>
-<section class="dialog">
+<!-- <section class="dialog">
   <div class="popup">
     <span class="close">&times;</span>
     <h2>Wait! Not Convinced Yet?</h2>
     <p>Let us offer you a one-time-only free month trial opportunity! Get in touch and claim your offer with this code: FLOWTRIAL30</p>
     <p><a target="_blank" href="mailto:sales@barflow.io">sales@barflow.io</a></p>
   </div>
-</section>
+</section> -->
 <script src="js/main.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
