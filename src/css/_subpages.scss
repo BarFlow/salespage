@@ -1,6 +1,5 @@
-main.stocktake{
+main.subpage{
   .landing{
-    background-image: $gradient-opaque-dark, url('../images/stocktaking_landing_bg.jpg');
     padding-top:14rem;
     padding-bottom:11rem;
   }
@@ -15,5 +14,17 @@ main.stocktake{
         }
       }
     }
+  }
+}
+
+main.stocktake{
+  .landing{
+    background-image: $gradient-opaque-dark, url('../images/stocktaking_landing_bg.jpg');
+  }
+}
+
+main.order{
+  .landing{
+    background-image: $gradient-opaque-dark, url('../images/orders_landing_bg.jpg');
   }
 }
