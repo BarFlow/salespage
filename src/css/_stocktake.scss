@@ -1,0 +1,19 @@
+main.stocktake{
+  .landing{
+    background-image: $gradient-opaque-dark, url('../images/stocktaking_landing_bg.jpg');
+    padding-top:14rem;
+    padding-bottom:11rem;
+  }
+  section.feature-wrap{
+    .feature{
+      .thumbnail{
+        margin-bottom: -1rem;
+      }
+      @include media-breakpoint-down(xs) {
+        ul{
+          text-align: left;
+        }
+      }
+    }
+  }
+}

@@ -65,10 +65,14 @@ button{
 
 .btn{
   background-color: transparent;
-  border: 2px solid white;
+  border: 1px solid #2B2B2B;
+  color: #2B2B2B;
   border-radius: 0.4rem;
-  padding: 0.7rem 3rem;
-  font-size: 1.2rem;
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+}
+a.btn, a.btn:visited{
+  color: #2B2B2B;
 }
 
 .div-line{

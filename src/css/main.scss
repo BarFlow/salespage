@@ -15,6 +15,9 @@ nav{
     padding: 0;
     li{
       font-size: 0.9rem;
+      @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+      }
     }
   }
   @include media-breakpoint-down(xs) {
@@ -91,6 +94,7 @@ main{
         margin: -1rem 15px -4rem 0;
         position: relative;
         @include media-breakpoint-down(sm) {
+          max-height: 400px;
           img{
             max-height: 100%;
             position: absolute;
@@ -101,6 +105,9 @@ main{
       .thumbnail.right{
         justify-content: flex-start;
         margin: -1rem 0 -4rem 15px;
+      }
+      .thumbnail.bottom{
+        margin-bottom: -4rem !important;
       }
 
       @include media-breakpoint-down(xs) {
@@ -308,3 +315,5 @@ section.dialog{
     }
   }
 }
+
+@import "stocktake";
