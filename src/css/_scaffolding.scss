@@ -146,3 +146,31 @@ a,a:focus,button,button:focus{
        transform: translateX(0);
    }
 }
+
+/*FIXED FIX*/
+.fixed-bg {
+    background-attachment: fixed !important;
+    background-size: cover;
+    background-position: center;
+}
+
+/*IPAD*/
+/* Portrait */
+@media only screen
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .fixed-bg {
+    background-size: auto 100% !important;
+    background-attachment: scroll !important;
+    background-position: center;
+  }
+}
+
+/* Landscape */
+@media only screen
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .fixed-bg {background-size: auto 100% !important;background-attachment: scroll !important; }
+}
