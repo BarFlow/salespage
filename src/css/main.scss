@@ -9,11 +9,15 @@ nav{
   font-size: 1rem;
   .navbar-brand{
     cursor: pointer;
+    max-width: 130px;
+    margin: -2px 0 0;
+    padding: 0;
   }
   ul{
     margin-bottom: 0;
     padding: 0;
     li{
+      line-height: 31px;
       font-size: 0.9rem;
       @include media-breakpoint-down(sm) {
         font-size: 1rem;
@@ -52,14 +56,15 @@ main{
     background-image: $gradient-opaque, url('../images/landing_bg.jpg');
     .lead{
       text-align: center;
+      margin-top: 1rem;
     }
     .products{
       text-align: center;
       img{
-        max-width: 100%;
+        max-width: 85%;
       }
       @include media-breakpoint-up(md) {
-        margin-top: 3rem;
+        margin-top: 2rem;
       }
     }
     @include media-breakpoint-down(sm) {
@@ -159,6 +164,7 @@ main{
         width: 140px;
         height: 140px;
         margin-bottom: 10px;
+        border-radius: 300px;
       }
       p{
         font-size: 18px;
@@ -229,6 +235,12 @@ main{
     }
     div.div-line{
       background-color: white;
+    }
+    ul{
+      display: inline-block;
+      li{
+        text-align: left;
+      }
     }
     form{
       text-align: center;
