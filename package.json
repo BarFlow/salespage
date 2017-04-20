@@ -18,7 +18,7 @@
   },
   "scripts": {
     "prod": "gulp --prod",
-    "deploy": "gulp --prod && docker build . -t barflow/salespage && docker push barflow/salespage",
+    "deploy": "gulp --prod && docker build . -t barflow/salespage && docker push barflow/salespage:latest",
     "demo": "gulp browser-sync --prod",
     "dev": "gulp --dev",
     "postinstall": "gulp check-versions && npm prune && npm run dev"

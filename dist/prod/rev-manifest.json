@@ -1,5 +1,5 @@
 {
-  "css/main.css": "css/main-82e01e7f5e.css",
+  "css/main.css": "css/main-fa7f36bbd7.css",
   "fonts/FontAwesome.otf": "fonts/FontAwesome-87d8ca3ddc.otf",
   "fonts/LT_54361.eot": "fonts/LT_54361-3fe897c890.eot",
   "fonts/LT_54361.ttf": "fonts/LT_54361-5dc5c50101.ttf",
@@ -14,7 +14,7 @@
   "images/LT_54361.svg": "images/LT_54361-46661d6d65.svg",
   "images/LT_54363.svg": "images/LT_54363-46661d6d65.svg",
   "images/appstore.svg": "images/appstore-4c7135ef75.svg",
-  "images/favicon.png": "images/favicon-4159ec0514.png",
+  "images/favicon.png": "images/favicon-1beb030328.png",
   "images/home_archives.png": "images/home_archives-0446310714.png",
   "images/home_catalog.png": "images/home_catalog-d0e854f05d.png",
   "images/home_cloud.png": "images/home_cloud-3c2ff339c0.png",
@@ -32,16 +32,16 @@
   "images/home_venues.png": "images/home_venues-0aa297580d.png",
   "images/landing_bg.jpg": "images/landing_bg-d1d682eec3.jpg",
   "images/limited_time.svg": "images/limited_time-7394809a9d.svg",
-  "images/logo.svg": "images/logo-fa182ffe14.svg",
-  "images/og_img.png": "images/og_img-b78c8c2793.png",
+  "images/logo.svg": "images/logo-80038e9949.svg",
+  "images/og_img.png": "images/og_img-f5df192ddb.png",
   "images/ordering_cart.png": "images/ordering_cart-8b3c14df5d.png",
   "images/ordering_product_adder.png": "images/ordering_product_adder-7bdf187cbc.png",
   "images/orders_landing_bg.jpg": "images/orders_landing_bg-6ec6be2730.jpg",
   "images/orders_order_sheet.png": "images/orders_order_sheet-58e5b6f10e.png",
-  "images/redin.png": "images/redin-e67ae60d8b.png",
+  "images/redin.jpg": "images/redin-2895070adf.jpg",
   "images/stocktake_cloud_products.png": "images/stocktake_cloud_products-0dfc08d964.png",
   "images/stocktake_reports_screen.png": "images/stocktake_reports_screen-246baa817a.png",
   "images/stocktake_ui_products.png": "images/stocktake_ui_products-39dc6f66fb.png",
   "images/stocktaking_landing_bg.jpg": "images/stocktaking_landing_bg-f4fa045e7d.jpg",
-  "js/main.js": "js/main-aeb57c5bba.js"
+  "js/main.js": "js/main-442c9aeb1b.js"
 }

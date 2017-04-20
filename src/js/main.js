@@ -109,7 +109,8 @@ $('form button[type="submit"]').click((e) => {
 
   const payload = {
     company: company.val(),
-    email: email.val()
+    email: email.val(),
+    source: 'website'
   };
 
   window.fbq('track', 'Lead', payload);
