@@ -1,7 +1,9 @@
 version: "3"
 services:
-  fathom:
-    image: barflow/salespage
+  barflow:
+    build:
+      dockerfile: Dockerfile
+      context: .
     ports:
       - 8080
     environment:
