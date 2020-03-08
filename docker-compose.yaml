@@ -1,0 +1,16 @@
+version: "3"
+services:
+  fathom:
+    image: barflow/salespage
+    ports:
+      - 8080
+    environment:
+      - "VIRTUAL_HOST=barflow.pego.dev"
+      - "VIRTUAL_PORT=8080"
+      - "LETSENCRYPT_HOST=barflow.pego.dev"
+    restart: always
+    networks:
+      - webproxy
+networks:
+  webproxy:
+    external: true
